@@ -1,0 +1,10 @@
+{
+  "name": "protocol",
+  "version-string": "1.0.0",
+  "description": "The Protocol module for Canary.",
+  "homepage": "https://github.com/opentibiabr/canary-lib",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ]
+}

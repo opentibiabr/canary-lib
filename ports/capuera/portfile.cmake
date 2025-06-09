@@ -1,8 +1,8 @@
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO opentibiabr/canary-lib
-        REF d1a5b400687beb4a500160a647e379e0a6e7c895
-        SHA512 cdba654e2d543203151a86fce9cfde17e43150cc0effdcb9e90b4b896072bb9e86c31652ab1bfc967a47d0da5d920ee2afc41a8fd58058bf72cb7b88b10df563
+        REF b4ff01f637759dceaf31c35e412469cf4b4da32d
+        SHA512 a8e11caa20e31f60999174830664bc702193a9ef0d2dbaa3c1734ece1802d170b111a89d161be1fcad35a2b159227a152e0bb2d196ceb46a0879adf125fb52ec
         HEAD_REF main
         SOURCE_SUBPATH libs/capuera
 )

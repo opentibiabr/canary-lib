@@ -1,0 +1,14 @@
+{
+  "registries": [
+    {
+      "kind": "git",
+      "repository": "https://github.com/opentibiabr/canary-lib.git",
+      "baseline": "8fae34ccbe1f4dfe7a47c6d493b481f0c0040c13",
+      "packages": ["protocol", "capuera"]
+    }
+  ],
+  "default-registry": {
+    "kind": "builtin",
+    "baseline": "417119555f155f6044dec7a379cd25466e339873"
+  }
+}

@@ -4,3 +4,6 @@ project(kapuera)
 include(${CMAKE_CURRENT_SOURCE_DIR}/../../cmake/CanaryLib.cmake)
 
 canary_add_library(kapuera)
+
+enable_testing()
+add_subdirectory(tests)

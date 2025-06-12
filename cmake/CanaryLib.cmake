@@ -1,19 +1,18 @@
 # CanaryLibrary.cmake
 function(canary_add_library LIB_NAME)
-    file(GLOB_RECURSE LIB_SOURCES CONFIGURE_DEPENDS src/*.cpp)
-    file(GLOB_RECURSE LIB_HEADERS CONFIGURE_DEPENDS include/*.hpp)
+    file(GLOB_RECURSE LIB_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
     add_library(${LIB_NAME} ${LIB_SOURCES})
 
     target_include_directories(${LIB_NAME}
-            PUBLIC
+        PUBLIC
             $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
             $<INSTALL_INTERFACE:include>
     )
 
     install(
             DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/
-            DESTINATION include/${LIB_NAME}
+            DESTINATION include
             FILES_MATCHING PATTERN "*.hpp"
     )
 

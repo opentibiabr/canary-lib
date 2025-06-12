@@ -23,7 +23,7 @@ To use the libraries in your project, you can add the repository to your `vcpkg-
       "kind": "git",
       "repository": "https://github.com/opentibiabr/canary-lib.git",
       "baseline": "f914a86ee99cda914709287b531d147b1415a8af", // latest commit hash
-      "packages": ["protocol", "capuera"]
+      "packages": ["protocol", "kapuera"]
     }
   ],
   "default-registry": {
@@ -35,8 +35,8 @@ To use the libraries in your project, you can add the repository to your `vcpkg-
 
 Add the relevant libraries to your `CMakeLists.txt`:
 ```cmake
-find_package(capuera CONFIG REQUIRED)
-target_link_libraries(main PRIVATE capuera::capuera)
+find_package(kapuera CONFIG REQUIRED)
+target_link_libraries(main PRIVATE kapuera::kapuera)
 ```
 
 Then you can install the libraries using vcpkg, normally:
@@ -66,7 +66,7 @@ vcpkg_from_github(
         REF ${YOUR_COMMIT_OR_TAG}
         SHA512 ${HASH_RESULT}
         HEAD_REF main
-        SOURCE_SUBPATH libs/capuera
+        SOURCE_SUBPATH libs/kapuera
 )
 ```
 
@@ -78,7 +78,7 @@ That can be done via vcpkg:
 VCPKG_FEATURE_FLAGS=versions ~/vcpkg/vcpkg x-add-version $LIBNAME --overlay-ports=ports --vcpkg-root=$(pwd) --overwrite-version
 ```
 
-Replace `$LIBNAME` with the name of the library you want to update (e.g., `capuera`, `protocol`, etc.).
+Replace `$LIBNAME` with the name of the library you want to update (e.g., `kapuera`, `protocol`, etc.).
 You must do that to all libraries that you want to update.
 
 Commiting the versions will point the vcpkg repo to this version from this commit on.

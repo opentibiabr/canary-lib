@@ -1,8 +1,8 @@
 {
-  "name": "capuera",
+  "name": "kapuera",
   "version": "0.1.0",
   "description": "A Tibia-inspired combat engine with Brazilian spice. Light, modular, agnostic, extensible, and ready to hit.",
-  "homepage": "https://github.com/opentibiabr/canary-lib/tree/main/capuera",
+  "homepage": "https://github.com/opentibiabr/canary-lib/tree/main/kapuera",
   "dependencies": [
     "vcpkg-cmake",
     "vcpkg-cmake-config"

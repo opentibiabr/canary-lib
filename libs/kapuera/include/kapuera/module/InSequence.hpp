@@ -5,9 +5,11 @@
 #include <kapuera/interfaces/ICombatEngine.hpp>
 
 namespace Kapuera::Module {
+    using MethodPtr = ModuleResult (IModule::*)(const CombatContext& ctx, ExecutionContext& exec, CombatOutcome& out);
+
     class InSequence final : public IModule, public ICombatEngine {
         std::vector<std::unique_ptr<IModule>> modules;
-        using MethodPtr = ModuleResult (IModule::*)(const CombatContext& ctx, ExecutionContext& exec, CombatOutcome& out);
+
         ModuleResult dispatch(MethodPtr method, const CombatContext& ctx, ExecutionContext& exec, CombatOutcome& out) const;
 
     public:

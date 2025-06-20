@@ -2,7 +2,7 @@ find_package(Catch2 CONFIG REQUIRED)
 
 add_executable(kapuera_tests
         test_main.cpp
-        test_damage.cpp
+        basic_example.cpp
 )
 
 target_link_libraries(kapuera_tests

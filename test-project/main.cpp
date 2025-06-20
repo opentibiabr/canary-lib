@@ -1,5 +1,5 @@
 #include <protocol/message.hpp>
-#include <kapuera/combat.hpp>
+#include <kapuera/core/combat.hpp>
 #include <iostream>
 
 int main() {

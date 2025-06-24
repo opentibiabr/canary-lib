@@ -6,3 +6,5 @@
 #include <kapuera/interfaces/ICombatEngine.hpp>
 #include <kapuera/interfaces/ICombatEntity.hpp>
 #include <kapuera/interfaces/IModule.hpp>
+
+namespace Kapuera {}

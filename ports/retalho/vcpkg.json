@@ -1,0 +1,10 @@
+{
+  "name": "retalho",
+  "version": "0.1.0",
+  "description": "A Tibia-inspired asset manager. Lightweight, flexible, format-savvy, and ready to pack sprites",
+  "homepage": "https://github.com/opentibiabr/canary-lib/tree/main/retalho",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ]
+}

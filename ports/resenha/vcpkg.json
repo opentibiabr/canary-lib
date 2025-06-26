@@ -1,0 +1,10 @@
+{
+  "name": "resenha",
+  "version": "0.1.0",
+  "description": "A Tibia-inspired protocol layer. Modular, extensible, format-agnostic, and ready to talk",
+  "homepage": "https://github.com/opentibiabr/canary-lib/tree/main/resenha",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ]
+}

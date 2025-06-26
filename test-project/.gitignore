@@ -1,4 +1,0 @@
-build/
-cmake-build-debug/
-cmake-build-relwithdebinfo/
-vcpkg_installed/

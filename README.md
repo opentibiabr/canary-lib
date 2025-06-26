@@ -23,7 +23,7 @@ To use the libraries in your project, you can add the repository to your `vcpkg-
       "kind": "git",
       "repository": "https://github.com/opentibiabr/canary-lib.git",
       "baseline": "f914a86ee99cda914709287b531d147b1415a8af", // latest commit hash
-      "packages": ["protocol", "kapuera"]
+      "packages": ["kapuera", "resenha", "retalho"]
     }
   ],
   "default-registry": {
@@ -75,10 +75,10 @@ You can then commit the new portfiles, which will point the vcpkg ports to the n
 After that, you just need to update the versions.
 That can be done via vcpkg:
 ```bash
-VCPKG_FEATURE_FLAGS=versions ~/vcpkg/vcpkg x-add-version $LIBNAME --overlay-ports=ports --vcpkg-root=$(pwd) --overwrite-version
+./add-version.sh kapuera resenha retalho
 ```
 
-Replace `$LIBNAME` with the name of the library you want to update (e.g., `kapuera`, `protocol`, etc.).
+Replace `$LIBNAME` with the name of the library you want to update (e.g., `kapuera`, `resenha`, etc.).
 You must do that to all libraries that you want to update.
 
 Commiting the versions will point the vcpkg repo to this version from this commit on.
